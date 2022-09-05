@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 18px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: url("./images/bg-header-desktop.png") no-repeat;
+    background-size: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 125px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: hsl(210, 10%, 33%);
+}
+
+p.description {
+    width: 42%;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+}
+.btns {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border-width: 0;
+    padding: 0.8rem 3rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    max-width: 200px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-left {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: inset 0px -2px 3px hsl(171, 66%, 34%);
+}
+
+.btn-right {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: inset 0px -2px 3px hsl(233, 100%, 59%);
+}
+
+.btn-left:hover {
+    background-color: hsl(171, 66%, 49%);
+}
+
+.btn-right:hover {
+    background-color: hsl(233, 100%, 74%);
+}
+
+.btn a {
+    color: hsl(0, 0%, 100%);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    /* min-height: 100vh; */
+    flex-direction: column;
+}
+h2 {
+    color: hsl(210, 10%, 33%);
+}
+.subsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.subsection .photo img {
+    position: relative;
+    left: -2rem;
+}
+.advantages {
+    margin: 4rem 0 0 2rem;
+}
+.advantages h3 {
+    margin-top: 4rem;
+    color: hsl(210, 10%, 33%);
+}
+.advantages p.description {
+    width: 50%;
+    text-align: left;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+}
+
+section.two {
+    margin-top: 4rem;
+}
+
+.photo {
+    margin: 4rem 0;
+}
+.photo img {
+    width: 100%;
+}
+.workflow {
+    display: flex;
+    width: 62%;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.tools {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    height: 4rem;
+}
+.tools img {
+    width: 2rem;
+}
+
+.workflow .tools p.description {
+    width: 100%;
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    line-height: 1.6rem;
+}
+h3 {
+    color: hsl(210, 10%, 33%);
+}
+.companies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 8rem 0;
+    gap: 6rem;
+}
+
+.companies img {
+    height: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 120px;
+    margin-top: 8rem;
+    background-color: hsl(201, 11%, 96%);
+}
+
+footer .logo {
+    width: 0;
+    justify-content: center;
+}
+
+footer .logo img {
+    width: 60px;
+    text-align: center;
+}
+
+footer .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    width: 40%;
+}
+
+.links a {
+    margin-left: 4rem;
+    font-size: 0.9rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.socials {
+    width: 20%;
+    text-align: right;
+}
+
+.socials img {
+    margin-left: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        background: url("./images/bg-header-mobile.png") no-repeat;
+        min-height: 80vh;
+    }
+    h1 {
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    h2 {
+        width: 80%;
+        padding: 0 2rem;
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+    p.description {
+        width: 80%;
+        line-height: 1.7rem;
+    }
+    .btns {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        max-width: 300px;
+    }
+    .subsection {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .subsection .photo {
+        text-align: center;
+    }
+    .subsection .photo img {
+        width: 86%;
+        left: 0;
+    }
+
+    .advantages {
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+
+    .advantages h3:first-child {
+        margin-top: 0;
+    }
+
+    .advantages p.description {
+        width: 100%;
+        padding: 0 4rem;
+        text-align: center;
+    }
+
+    .photo {
+        margin: 4rem 0 8rem;
+    }
+
+    .workflow {
+        flex-direction: column;
+    }
+
+    .companies {
+        flex-direction: column;
+        gap: 4rem;
+        width: auto;
+    }
+    .companies img {
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    footer .logo{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    footer .links {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap:1.8rem;
+    }
+    footer .links a {
+        margin-left: 0;
+    }
+
+    footer .socials{
+        width: 100%;
+        display: inline-block;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+}
